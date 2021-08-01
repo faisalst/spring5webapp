@@ -1,2 +1,8 @@
-package guru.springframework.spring5webapp.repoitories;public class PublisherRepository {
-}
+package guru.springframework.spring5webapp.repoitories;
+import guru.springframework.spring5webapp.domain.Publisher;
+import org.springframework.data.repository.CrudRepository;
+
+
+    public interface PublisherRepository extends CrudRepository<Publisher, Long> {
+    }
+
